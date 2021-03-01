@@ -66,7 +66,7 @@ dataMostView <- t(dataMostView)
 dataMostView <- as.data.frame(dataMostView)
 dataMostView <- rbind(0, dataMostView)
 names(dataMostView) <- c("Masculino", "Feminino")
-row.names(dataMostView) <- c("0","Videos", "Musicas", "Podcasts", "Jogos", "Redes", "Noticias")
+row.names(dataMostView) <- c("0","Videos", "Musicas", "Podcasts", "Jogos", "Redes Sociais", "Noticias")
 
 lessVideoM <- as.integer(data %>% filter(Conteudo_menos_consumido == "Videos" & Sexo == "M") %>% count() %>% collect())
 lessVideoF <- as.integer(data %>% filter(Conteudo_menos_consumido == "Videos" & Sexo == "F") %>% count() %>% collect())
